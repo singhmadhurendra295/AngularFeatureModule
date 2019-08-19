@@ -7,3 +7,20 @@ export const routes: Routes = [
 ]
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes)
+
+
+/**
+ * export const RouteConfig: Routes = [
+    {
+        path: '',
+        component: HomeComponent,
+        canActivate: [AuthGuard],
+        children: [
+            { path: '', component: HomePage },
+            { path: 'test/:id', component: Testinfo},
+            { path: 'test2/:id', component: Testinfo1},
+            { path: 'test3/:id', component: Testinfo2}
+        ]
+    }
+];
+ */
